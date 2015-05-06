@@ -8,13 +8,13 @@ process.on('uncaughtException', function (err) {
 });
 
 function main(options) {
-  (new Agent()).listen({ port : options.port })
+  options = options || {};
+
+  (new Agent()).listen({ port : options.port || port })
 }
 
 if (require.main === module) {
-  main({
-      port  : port
-  });
+  main();
 }
 
 module.exports = {
