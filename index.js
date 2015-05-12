@@ -4,7 +4,7 @@ var argv  = require('minimist')(process.argv.slice(2))
   ;
 
 process.on('uncaughtException', function (err) {
-  console.error('sdk::uncaughtException', err.stack || err.toString());
+  console.error('taskmill-core-agent::uncaughtException', err.stack || err.toString());
 });
 
 function main(options) {
