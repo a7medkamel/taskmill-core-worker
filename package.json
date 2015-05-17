@@ -1,5 +1,5 @@
 {
-  "name": "taskmill-core-agent",
+  "name": "taskmill-core-worker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/a7medkamel/taskmill-core-agent.git"
+    "url": "https://github.com/a7medkamel/taskmill-core-worker.git"
   },
   "author": "a7medkamel <ak@ahmedkamel.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/a7medkamel/taskmill-core-agent/issues"
+    "url": "https://github.com/a7medkamel/taskmill-core-worker/issues"
   },
-  "homepage": "https://github.com/a7medkamel/taskmill-core-agent"
+  "homepage": "https://github.com/a7medkamel/taskmill-core-worker"
 }
