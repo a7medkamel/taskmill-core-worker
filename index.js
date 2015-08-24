@@ -1,5 +1,6 @@
 var argv    = require('minimist')(process.argv.slice(2))
   , Worker  = require('./lib/worker')
+  , error   = require('./lib/error')
   , port    = argv.port || 80
   ;
 
@@ -19,5 +20,6 @@ if (require.main === module) {
 
 module.exports = {
     main    : main
+  , error   : error
   , request : require('./lib/request')
 };
