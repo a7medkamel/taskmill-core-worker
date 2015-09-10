@@ -1,8 +1,11 @@
 var argv    = require('minimist')(process.argv.slice(2))
   , Worker  = require('./lib/worker')
   , error   = require('./lib/error')
+  , Promise = require('bluebird')
   , port    = argv.port || 80
   ;
+
+Promise.longStackTraces();
 
 process.on('uncaughtException', function (err) {
   console.error('taskmill-core-worker::uncaughtException', err.stack || err.toString());
