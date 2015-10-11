@@ -1,28 +1,25 @@
-var argv    = require('minimist')(process.argv.slice(2))
-  , Worker  = require('./lib/worker')
-  , error   = require('./lib/error')
+var Worker  = require('./lib/worker')
+  , App     = require('./lib/app')
+  , _       = require('underscore')
   , Promise = require('bluebird')
-  , port    = argv.port || 80
+  , config  = require('config')
   ;
 
-Promise.longStackTraces();
+if (config.longstack) {
+  Promise.longStackTraces();
+}
 
 process.on('uncaughtException', function (err) {
   console.error('taskmill-core-worker::uncaughtException', err.stack || err.toString());
 });
 
-function main(options) {
-  options = options || {};
-
-  (new Worker()).listen({ port : options.port || port })
-}
-
 if (require.main === module) {
-  main();
+  (new Worker({})).listen({ port : config.port || 80 });
 }
 
 module.exports = {
-    main    : main
-  , error   : error
+    Worker  : Worker
+  , App     : App
+  , error   : require('./lib/error')
   , request : require('./lib/request')
 };
