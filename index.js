@@ -13,10 +13,6 @@ process.on('uncaughtException', function (err) {
   console.error('taskmill-core-worker::uncaughtException', err.stack || err.toString());
 });
 
-if (require.main === module) {
-  (new Worker({})).listen({ port : config.port || 80 });
-}
-
 module.exports = {
     Worker  : Worker
   , App     : App
