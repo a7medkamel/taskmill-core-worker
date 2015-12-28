@@ -1,4 +1,8 @@
 {
   "port" : 80,
-  "socket" : null
+  "tunnel" : {
+    "protocol" : "http",
+    "host" : "relay.taskmill.io",
+    "port" : 8989
+  }
 }
