@@ -2,7 +2,7 @@
   "port" : 80,
   "tunnel" : {
     "protocol" : "http",
-    "host" : "relay.taskmill.io",
+    "host" : "__relay.io",
     "port" : 8989
   }
 }
