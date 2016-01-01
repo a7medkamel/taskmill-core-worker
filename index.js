@@ -14,18 +14,18 @@ process.on('uncaughtException', function (err) {
 });
 
 function main() {
+  console.log('>> started');
   function Code(worker, data) {
     this.manual = data.manual;
   };
 
   Code.prototype.run = function(req, res, next) {
-    console.log('foo bar')
     res.send('Hello from taskmill-core-worker!');
   };
 
   (new Worker({ Code : Code })).listen(undefined, function(err, res){
     var diff = process.hrtime(s_hrtime);
-    console.log('worker ready in', (diff[0] * 1e9 + diff[1]) / 1e6);
+    console.log('>> code loaded,', ((diff[0] * 1e9 + diff[1]) / 1e6).toFixed(2) + 'ms');
   });
 }
 
