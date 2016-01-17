@@ -1,5 +1,6 @@
 {
   "port" : 80,
+  "code-module" : "taskmill-code-dummy",
   "tunnel" : {
     "protocol" : "http",
     "host" : "__relay.io",

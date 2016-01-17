@@ -8,12 +8,13 @@
     "body-parser": "^1.13.3",
     "config": "^1.16.0",
     "express": "^4.13.3",
-    "json-stringify-safe": "^5.0.1",
+    "express-content-type-override": "^1.0.2",
     "localtunnel": "^1.8.0",
-    "qs": "^5.1.0",
+    "on-finished": "^2.3.0",
     "request": "^2.62.0",
     "response-time": "^2.3.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"

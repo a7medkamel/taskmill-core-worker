@@ -1,1 +1,1 @@
-# taskmill-core-agent
+# taskmill-core-worker
