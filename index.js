@@ -3,9 +3,6 @@ var s_hrtime    = process.hrtime()
   , Promise     = require('bluebird')
   ;
 
-// use BLUEBIRD_DEBUG=1 on worker boot instead
-// Promise.longStackTraces();
-
 console.log('>> started');
 
 (new Worker()).listen(undefined, function(err, res){
