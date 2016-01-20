@@ -83,10 +83,6 @@ RUN apt-get install -y libvips-dev libgsf-1-dev
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Define working directory.
-# WORKDIR /data
 WORKDIR /home/worker
 
 ADD ./ /home/worker/
-
-
-
