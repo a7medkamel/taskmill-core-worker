@@ -30,3 +30,4 @@ node_modules
 local.json
 
 project.sublime-workspace
+project.sublime-project
