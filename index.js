@@ -1,6 +1,5 @@
 var s_hrtime    = process.hrtime()
   , Worker      = require('./lib/worker')
-  , Promise     = require('bluebird')
   ;
 
 console.log('>> started');
