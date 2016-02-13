@@ -1,9 +1,13 @@
 {
   "port" : 80,
   "code-module" : "taskmill-code-dummy",
-  "tunnel" : {
-    "protocol" : "http",
-    "host" : "__relay.io",
-    "port" : 8989
+  "tunnel"      : {
+    "protocol"  : "http",
+    "hostname"  : "taskmill.io",
+    "port"      : 8989
+  },
+  "services"    : {
+    "protocol"  : "https",
+    "hostname"  : "taskmill.io"
   }
 }
