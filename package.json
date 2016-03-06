@@ -11,10 +11,11 @@
     "express-content-type-override": "^1.0.2",
     "localtunnel": "^1.8.1",
     "on-finished": "^2.3.0",
+    "on-headers": "^1.0.1",
     "request": "^2.69.0",
     "response-time": "^2.3.1",
-    "underscore": "^1.8.3",
-    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git"
+    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"
