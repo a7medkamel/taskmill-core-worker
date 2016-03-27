@@ -16,6 +16,7 @@
     "request": "^2.69.0",
     "response-time": "^2.3.1",
     "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git",
+    "taskmill-code-arbitrary": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
