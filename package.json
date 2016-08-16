@@ -11,14 +11,15 @@
     "express": "^4.14.0",
     "express-content-type-override": "^1.0.3",
     "localtunnel": "^1.8.1",
-    "lodash": "^4.14.1",
+    "lodash": "^4.14.2",
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.1",
     "request": "^2.74.0",
-    "request-promise": "^4.1.0",
+    "request-promise": "^4.1.1",
     "response-time": "^2.3.1",
     "taskmill-code-arbitrary": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git",
-    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git"
+    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git",
+    "url-join": "^1.1.0"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"

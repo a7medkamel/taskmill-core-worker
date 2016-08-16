@@ -2,6 +2,7 @@ var s_hrtime    = process.hrtime()
   , Worker      = require('./lib/worker')
   ;
 
+
 process.on('uncaughtException', function (err) {
   console.error(new Date().toUTCString(), 'uncaughtException', err.message);
   console.error(err.stack);
@@ -9,7 +10,7 @@ process.on('uncaughtException', function (err) {
   process.exit(1);
 });
 
-console.log('>> started');
+console.log('> started');
 
 (new Worker()).listen(undefined, function(err, res){
   if (err) {
@@ -17,5 +18,5 @@ console.log('>> started');
   }
   
   var diff = process.hrtime(s_hrtime);
-  console.log('>> code loaded,', ((diff[0] * 1e9 + diff[1]) / 1e6).toFixed(2) + 'ms');
+  console.log('> connected to relay,', ((diff[0] * 1e9 + diff[1]) / 1e6).toFixed(2) + 'ms');
 });
