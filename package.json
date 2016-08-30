@@ -12,7 +12,6 @@
     "lodash": "^4.14.2",
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.1",
-    "request": "^2.74.0",
     "request-promise": "^4.1.1",
     "response-time": "^2.3.1",
     "taskmill-code-arbitrary": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git",
