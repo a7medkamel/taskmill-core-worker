@@ -1,4 +1,5 @@
 {
   "port" : 80,
-  "code-module" : "taskmill-code-dummy"
+  "code-module" : "taskmill-code-dummy",
+  "keep-alive" : false
 }
