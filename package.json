@@ -13,6 +13,7 @@
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
     "response-time": "^2.3.1",
+    "taskmill-code-disk": "git+https://github.com/a7medkamel/taskmill-code-disk.git",
     "taskmill-code-arbitrary": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git",
     "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git",
     "url-join": "^1.1.0"
