@@ -6,6 +6,9 @@
   "dependencies": {
     "bluebird": "^3.4.3",
     "body-parser": "^1.15.2",
+    "breadboard-sdk-docusign": "git+https://github.com/a7medkamel/breadboard-sdk-docusign.git",
+    "breadboard-sdk-mongodb": "git+https://github.com/a7medkamel/breadboard-sdk-mongodb.git",
+    "breadboard-sdk-notification": "git+https://github.com/a7medkamel/breadboard-sdk-notification.git",
     "config": "^1.21.0",
     "express": "^4.14.0",
     "lodash": "^4.15.0",
@@ -13,10 +16,9 @@
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
     "response-time": "^2.3.1",
-    "taskmill-code-disk": "git+https://github.com/a7medkamel/taskmill-code-disk.git",
     "taskmill-code-arbitrary": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git",
-    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git",
-    "url-join": "^1.1.0"
+    "taskmill-code-disk": "git+https://github.com/a7medkamel/taskmill-code-disk.git",
+    "taskmill-code-dummy": "git+https://github.com/a7medkamel/taskmill-code-dummy.git"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"
