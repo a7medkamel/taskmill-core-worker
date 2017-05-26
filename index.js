@@ -1,4 +1,4 @@
-var Worker = require('./lib/worker');
+console.log('> started');
 
 process.on('uncaughtException', function (err) {
   console.error(new Date().toUTCString(), 'uncaughtException', err.message);
@@ -7,10 +7,4 @@ process.on('uncaughtException', function (err) {
   process.exit(1);
 });
 
-console.log('> started');
-
-(new Worker()).listen(undefined, function(err, res){
-  if (err) {
-    throw err;
-  }
-});
+require('./lib/index');
