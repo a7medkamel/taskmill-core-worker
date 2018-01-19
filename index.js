@@ -1,3 +1,8 @@
+const amp = require('app-module-path');
+
+// do this once
+amp.addPath(`${process.cwd()}/node_modules`);
+
 console.log('> started');
 
 process.on('uncaughtException', function (err) {

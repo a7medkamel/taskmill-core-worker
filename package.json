@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "app-module-path": "^2.2.0",
     "bluebird": "^3.4.3",
     "body-parser": "^1.15.2",
     "breadboard-sdk-docusign": "git+https://github.com/a7medkamel/breadboard-sdk-docusign.git",
